@@ -111,10 +111,10 @@ const SalesChart = () => {
         </CardHeader>
         <CardContent>
           <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={topProducts} layout="horizontal">
+            <BarChart data={topProducts}>
               <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
-              <XAxis type="number" stroke="#6B7280" />
-              <YAxis dataKey="produto" type="category" width={150} stroke="#6B7280" />
+              <XAxis dataKey="produto" stroke="#6B7280" />
+              <YAxis type="number" stroke="#6B7280" />
               <Tooltip 
                 contentStyle={{ 
                   backgroundColor: 'rgba(255, 255, 255, 0.95)', 
@@ -123,9 +123,9 @@ const SalesChart = () => {
                   boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)'
                 }}
               />
-              <Bar dataKey="vendas" fill="url(#colorGradient)" radius={[0, 4, 4, 0]} />
+              <Bar dataKey="vendas" fill="url(#colorGradient)" radius={[4, 4, 0, 0]} />
               <defs>
-                <linearGradient id="colorGradient" x1="0" y1="0" x2="1" y2="0">
+                <linearGradient id="colorGradient" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="0%" stopColor="#3B82F6" />
                   <stop offset="100%" stopColor="#06B6D4" />
                 </linearGradient>
