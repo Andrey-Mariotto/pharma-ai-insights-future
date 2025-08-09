@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
@@ -11,10 +10,8 @@ import CustomerInsights from "@/components/dashboard/CustomerInsights";
 import PredictiveAnalysis from "@/components/dashboard/PredictiveAnalysis";
 import AIFutureSection from "@/components/dashboard/AIFutureSection";
 import KPICards from "@/components/dashboard/KPICards";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-cyan-50">
+  return <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-cyan-50">
       {/* Header */}
       <div className="bg-white/80 backdrop-blur-sm border-b border-blue-100 sticky top-0 z-50">
         <div className="container mx-auto px-6 py-4">
@@ -24,9 +21,7 @@ const Index = () => {
                 <Pill className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-cyan-700 bg-clip-text text-transparent">
-                  FarmaciaIA Analytics
-                </h1>
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-700 to-cyan-700 bg-clip-text text-transparent">Analise Farmacia </h1>
                 <p className="text-sm text-gray-600">Dashboard Inteligente para o Futuro das Farmácias</p>
               </div>
             </div>
@@ -110,8 +105,6 @@ const Index = () => {
           </TabsContent>
         </Tabs>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
